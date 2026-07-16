@@ -33,9 +33,9 @@ const WEDDING_CONFIG = {
     parking: "주차안내를 받아 바닷가쪽 주차장이용",
 
     // 실제 예식장 링크로 교체하세요.
-    naverMap: "https://map.naver.com/",
-    kakaoMap: "https://map.kakao.com/",
-    googleMap: "https://maps.google.com/"
+    naverMap: "https://naver.me/FCARAnDz",
+    kakaoMap: "https://kko.to/KhwZvv2XOw",
+    googleMap: "https://maps.app.goo.gl/14SeUBx9594jroQT7"
   },
 
   accounts: [
