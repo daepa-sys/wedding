@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="모바일 청첩장" />
+  <meta property="og:title" content="우리 결혼합니다" />
+  <meta property="og:description" content="소중한 분들을 저희 결혼식에 초대합니다." />
+  <meta property="og:image" content="images/main.svg" />
+  <title>우리 결혼합니다</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="hero section">
+      <img id="mainPhoto" class="hero-image" src="images/main.svg" alt="신랑 신부 메인 사진" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">WEDDING INVITATION</p>
+        <h1><span id="groomName">홍길동</span> <span class="heart">♥</span> <span id="brideName">김영희</span></h1>
+        <p id="heroDate">2027년 3월 20일 토요일 오후 2시</p>
+        <p id="heroVenue">라온웨딩홀 그랜드홀</p>
+      </div>
+    </section>
+
+    <section class="section paper intro reveal">
+      <p class="section-kicker">INVITATION</p>
+      <h2>소중한 분들을 초대합니다</h2>
+      <p id="invitationMessage" class="poem"></p>
+
+      <div class="parents">
+        <p><span id="groomParents">홍아버지 · 이어머니</span>의 아들 <strong id="groomName2">홍길동</strong></p>
+        <p><span id="brideParents">김아버지 · 박어머니</span>의 딸 <strong id="brideName2">김영희</strong></p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker">DATE</p>
+      <h2>예식 일시</h2>
+
+      <div class="date-card">
+        <div class="date-big">
+          <span id="dateMonth">03</span>
+          <span class="slash">/</span>
+          <span id="dateDay">20</span>
+        </div>
+        <p id="dateFull">2027년 3월 20일 토요일 오후 2시</p>
+        <p id="dDay" class="d-day">D-000</p>
+      </div>
+
+      <div id="calendar" class="calendar" aria-label="예식일 달력"></div>
+
+      <button id="addCalendarBtn" class="button primary" type="button">캘린더에 일정 저장</button>
+    </section>
+
+    <section class="section paper reveal">
+      <p class="section-kicker">GALLERY</p>
+      <h2>우리의 순간</h2>
+      <div class="gallery">
+        <button class="gallery-item" data-src="images/photo1.svg"><img src="images/photo1.svg" alt="웨딩 사진 1"></button>
+        <button class="gallery-item" data-src="images/photo2.svg"><img src="images/photo2.svg" alt="웨딩 사진 2"></button>
+        <button class="gallery-item" data-src="images/photo3.svg"><img src="images/photo3.svg" alt="웨딩 사진 3"></button>
+        <button class="gallery-item" data-src="images/photo4.svg"><img src="images/photo4.svg" alt="웨딩 사진 4"></button>
+      </div>
+      <p class="guide">images 폴더의 사진 파일을 같은 이름으로 교체하면 됩니다.</p>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker">LOCATION</p>
+      <h2>오시는 길</h2>
+
+      <div class="location-card">
+        <h3 id="venueName">라온웨딩홀 그랜드홀</h3>
+        <p id="venueAddress">서울특별시 중구 세종대로 110</p>
+        <p id="venueTel">02-1234-5678</p>
+
+        <div class="map-buttons">
+          <a id="naverMapBtn" class="button outline" href="#" target="_blank" rel="noopener">네이버지도</a>
+          <a id="kakaoMapBtn" class="button outline" href="#" target="_blank" rel="noopener">카카오맵</a>
+          <a id="googleMapBtn" class="button outline" href="#" target="_blank" rel="noopener">Google 지도</a>
+        </div>
+      </div>
+
+      <div class="transport">
+        <article>
+          <h3>지하철</h3>
+          <p id="subwayInfo">1·2호선 시청역 5번 출구에서 도보 5분</p>
+        </article>
+        <article>
+          <h3>버스</h3>
+          <p id="busInfo">시청앞 정류장 하차</p>
+        </article>
+        <article>
+          <h3>주차</h3>
+          <p id="parkingInfo">웨딩홀 지하주차장 2시간 무료</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section paper reveal">
+      <p class="section-kicker">ACCOUNT</p>
+      <h2>마음 전하실 곳</h2>
+      <p class="guide">계좌 공개가 부담스러우면 이 섹션을 삭제해도 됩니다.</p>
+
+      <div id="accountList" class="account-list"></div>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker">CONTACT</p>
+      <h2>연락하기</h2>
+      <div class="contact-grid">
+        <a id="groomCall" class="contact-card" href="#">
+          <span>신랑에게 전화</span>
+          <strong id="groomPhoneText">010-0000-0000</strong>
+        </a>
+        <a id="brideCall" class="contact-card" href="#">
+          <span>신부에게 전화</span>
+          <strong id="bridePhoneText">010-1111-1111</strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <p>저희의 새로운 시작을 함께 축복해 주세요.</p>
+      <button id="shareBtn" class="button primary" type="button">청첩장 링크 공유</button>
+      <p class="copyright">© <span id="copyrightYear"></span> Wedding Invitation</p>
+    </section>
+  </main>
+
+  <dialog id="lightbox">
+    <button id="lightboxClose" class="lightbox-close" aria-label="닫기">×</button>
+    <img id="lightboxImage" alt="확대된 웨딩 사진" />
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

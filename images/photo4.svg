@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#917b70"/>
+      <stop offset="1" stop-color="#c8ad9f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#g)"/>
+  <circle cx="600" cy="610" r="250" fill="rgba(255,255,255,.2)"/>
+  <path d="M600 770 C470 650 360 570 360 435 C360 310 510 265 600 385 C690 265 840 310 840 435 C840 570 730 650 600 770Z"
+        fill="rgba(255,255,255,.42)"/>
+  <text x="600" y="1010" text-anchor="middle" fill="white" font-size="70" font-family="serif">PHOTO 04</text>
+  <text x="600" y="1090" text-anchor="middle" fill="rgba(255,255,255,.85)" font-size="32" font-family="sans-serif">웨딩 사진으로 교체하세요</text>
+</svg>
