@@ -109,6 +109,8 @@
 
   function renderAccounts() {
     const list = $("#accountList");
+    if (!list) return;
+    
     list.innerHTML = "";
 
     config.accounts.forEach((account) => {
