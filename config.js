@@ -27,7 +27,7 @@ const WEDDING_CONFIG = {
   venue: {
     name: "오린하우스",
     address: "부산 기장군 일광읍 학리2길 6",
-    tel: "0507-1327-6933",
+    tel: "TEL : 0507-1327-6933",
     subway: "일광역에서 택시로 5분",
     bus: "시청앞 정류장 하차",
     parking: "주차안내를 받아 바닷가쪽 주차장이용",
