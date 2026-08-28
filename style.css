@@ -416,3 +416,39 @@ dialog::backdrop {
     transition: none !important;
   }
 }
+
+
+/* ========================================
+   모시는 글
+======================================== */
+
+.invitation-photo {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 42px;
+}
+
+.invitation-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.10);
+}
+
+.invitation-letter {
+  margin-top: 35px;
+
+  font-family: "Gowun Batang", serif;
+  font-size: 1.05rem;
+
+  line-height: 2.1;
+  color: var(--text);
+}
+
+.invitation-letter p {
+  margin: 0 0 32px;
+}
