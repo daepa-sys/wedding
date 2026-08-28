@@ -246,6 +246,36 @@
     document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
   }
 
+  function setupBackgroundMusic() {
+    const music = document.querySelector("#backgroundMusic");
+    const button = document.querySelector("#musicToggle");
+
+    if (!music || !button) return;
+
+    music.volume = 0.35;
+
+    button.addEventListener("click", async () => {
+      try {
+        if (music.paused) {
+          await music.play();
+          button.textContent = "Ⅱ";
+          button.classList.add("playing");
+          button.setAttribute("aria-label", "배경음악 정지");
+        } else {
+          music.pause();
+          button.textContent = "♪";
+          button.classList.remove("playing");
+          button.setAttribute("aria-label", "배경음악 재생");
+        }
+      } catch (error) {
+        console.error("음악 재생 오류:", error);
+      }
+    });
+  }
+
+
+
+
   renderBasicInfo();
   renderCalendar();
   renderDday();
@@ -253,5 +283,6 @@
   setupGallery();
   setupShare();
   setupCalendarDownload();
+  setupBackgroundMusic();
   setupReveal();
 })();

@@ -15,6 +15,19 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <button id="musicToggle"
+          class="music-toggle"
+          type="button"
+          aria-label="배경음악 재생">
+    ♪
+  </button>
+
+  <audio id="backgroundMusic" loop preload="metadata">
+    <source src="music/music.mp3" type="audio/mpeg">
+    브라우저가 오디오 재생을 지원하지 않습니다.
+  </audio>
+
   <main>
     <section class="hero section">
       <img id="mainPhoto" class="hero-image" src="images/main_final.png" alt="신랑 신부 메인 사진" />
@@ -104,7 +117,7 @@
       그리고 함께한 오늘을 기억하고싶어서<br>
       인생네컷도 준비했습니다.<br>
       찍은사진중 하나를 남겨주시면<br>
-      방명록으로 오래도록 소중히 간직하겠습니다.
+      방명록으로 소중히 간직하겠습니다.
     </p>
 
     <p>

@@ -452,3 +452,43 @@ dialog::backdrop {
 .invitation-letter p {
   margin: 0 0 32px;
 }
+
+
+.music-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 1000;
+
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+
+  background: rgba(60, 48, 43, 0.65);
+  color: #fff;
+  font-size: 1.35rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+.music-toggle.playing {
+  animation: music-spin 4s linear infinite;
+  background: rgba(168, 115, 115, 0.88);
+}
+
+@keyframes music-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
