@@ -13,7 +13,7 @@ const WEDDING_CONFIG = {
   },
 
   // ISO 형식: YYYY-MM-DDTHH:MM:SS+09:00
-  weddingDate: "2026-10-31T11:00:00+09:00",
+  weddingDate: "2026-10-31T12:00:00+09:00",
 
   invitationMessage:
 `서로가 마주 보며 다져온 사랑을
