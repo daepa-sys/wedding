@@ -30,7 +30,7 @@ const WEDDING_CONFIG = {
     tel: "TEL : 0507-1327-6933",
     subway: "일광역에서 택시로 5분",
     bus: "시청앞 정류장 하차",
-    parking: "주차안내를 받아 바닷가쪽 주차장이용",
+    parking: "식장근처 오셔서 주차안내를 받아 이용",
 
     // 실제 예식장 링크로 교체하세요.
     naverMap: "https://naver.me/FCARAnDz",
