@@ -52,10 +52,10 @@
     $("#kakaoMapBtn").href = config.venue.kakaoMap;
     $("#googleMapBtn").href = config.venue.googleMap;
 
-    setText("#groomPhoneText", config.groom.phone);
-    setText("#bridePhoneText", config.bride.phone);
-    $("#groomCall").href = `tel:${onlyDigits(config.groom.phone)}`;
-    $("#brideCall").href = `tel:${onlyDigits(config.bride.phone)}`;
+    // setText("#groomPhoneText", config.groom.phone);
+    // setText("#bridePhoneText", config.bride.phone);
+    // $("#groomCall").href = `tel:${onlyDigits(config.groom.phone)}`;
+    // $("#brideCall").href = `tel:${onlyDigits(config.bride.phone)}`;
 
     document.title = `${config.groom.name} ♥ ${config.bride.name} 결혼식`;
     setText("#copyrightYear", new Date().getFullYear());
